@@ -2,22 +2,30 @@
 #define TOKEN_H
 
 typedef enum {
-    //varaibles y numeros
     TOKEN_NUM,
     TOKEN_ID,
-    //operadores aritmeticos
     TOKEN_PLUS,
     TOKEN_MINUS,
     TOKEN_MUL,
     TOKEN_DIV,
-    //asignacion(=)
+    TOKEN_MOD,
     TOKEN_ASSIGN,
-    //imprimir
+    TOKEN_EQ,      
+    TOKEN_NEQ,     
+    TOKEN_LT,      
+    TOKEN_GT,      
+    TOKEN_LE,      
+    TOKEN_GE,      
     TOKEN_PRINT,
-    //parentesis
+    TOKEN_IF,
+    TOKEN_ELSE,
+    TOKEN_WHILE,
+    TOKEN_FOR,
     TOKEN_LPAREN,
     TOKEN_RPAREN,
-    //salto de linea
+    TOKEN_LBRACE,
+    TOKEN_RBRACE,
+    TOKEN_SEMICOLON,
     TOKEN_EOF
 
 } TokenType;
